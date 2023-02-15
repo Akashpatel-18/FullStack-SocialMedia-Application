@@ -4,7 +4,7 @@ import axios from 'axios'
 export const register = createAsyncThunk('/register', async({formValue,navigate, toast}, {rejectWithValue}) => {
     try {
         
-        const response = await axios.post('https://websocialfun.vercel.app/users/register', formValue)
+        const response = await axios.post('/users/register', formValue)
         toast.success("Register Successful")
         navigate('/')
         return response.data
@@ -17,7 +17,7 @@ export const register = createAsyncThunk('/register', async({formValue,navigate,
 export const login = createAsyncThunk('/login', async({formValue,navigate, toast}, {rejectWithValue}) => {
     try {
         
-        const response = await axios.post('https://websocialfun.vercel.app/users/login', formValue)
+        const response = await axios.post('/users/login', formValue)
         toast.success("Login Successful")
         navigate('/')
         return response.data
@@ -29,7 +29,7 @@ export const login = createAsyncThunk('/login', async({formValue,navigate, toast
 
 export const logOut = createAsyncThunk('logout', async ({navigate, toast}) => {
     try {
-        await axios.get('https://websocialfun.vercel.app/users/logout')
+        await axios.get('/users/logout')
         localStorage.clear()
         toast.success("logout Successful")
         navigate('/login')

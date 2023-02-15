@@ -1,0 +1,88 @@
+
+.container{
+    width:85%;
+    padding: 15px;
+    /* border: 1px solid aqua; */
+    border-radius: 10px;
+    margin:20px 0px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userInfo{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.userInfo .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgb(160, 88, 160);;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.details .name{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Roboto" sans-serif;
+}
+.details .date{
+    font-size: 11px;
+}
+
+.user .postVertIcon {
+    margin-right: 20px;
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.user .postVertIcon:hover{
+    background-color: #f5f5f5;
+}
+
+.content{
+    margin: 15px 0;
+}
+.content p{
+    font-size: 14px;
+}
+.content img{
+    width: 100%;
+    max-height: 400px;
+    margin-top: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.infoInner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info .item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+

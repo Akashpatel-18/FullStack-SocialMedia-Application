@@ -1,0 +1,28 @@
+.friendList{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+}
+.friendList:hover{
+    background-color: rgb(245, 243, 243);
+}
+
+.friendList .LeftLink{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    cursor: pointer;
+}
+.friendList .userAvatar{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(160, 88, 160);;
+}
+.friendName{
+    font-size: 15px;
+}

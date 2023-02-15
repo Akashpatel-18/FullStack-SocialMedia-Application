@@ -1,0 +1,15 @@
+.upBox{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+.up{
+    border: 1px solid purple;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 34px;
+    background-color: transparent;
+    z-index: 999;
+    color: purple;
+}

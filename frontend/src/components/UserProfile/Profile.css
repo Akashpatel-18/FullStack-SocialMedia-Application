@@ -1,0 +1,78 @@
+.home{
+    display: flex;
+}
+
+.profile{
+
+        width: 50%;
+        background: #fdfdfd;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    
+}
+
+
+.profileBox{
+        width:85%;
+        padding: 15px;
+/*         border: 1px solid aqua;
+ */        border-radius: 10px;
+        margin:20px 0px;
+        background-color: white;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        display: flex;
+        justify-content: space-around;
+    }
+.profileLeft .profileAvatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit:cover;
+    font-size: 70px;
+    background-color: rgb(160, 88, 160);
+}    
+.profileRight{
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    align-items: center;
+    margin-right: 70px;
+}
+.profileTop{
+    font-weight: 500;
+    font-size: 22px;
+}
+.profileMiddle{
+   
+    margin: 5px 0px 20px 0px;
+    
+}
+.profileMiddle .editProfile1{
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 3px 9px;
+    background-color:#f5f5f5;
+    color: green;
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+.profileMiddle .logout{
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 3px 9px;
+    background-color:#f5f5f5;
+    color: rgb(227, 55, 55);
+    font-size: 12px;
+    font-weight: 300;
+}
+.profileBottom{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+

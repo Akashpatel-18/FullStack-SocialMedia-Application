@@ -1,0 +1,104 @@
+.editDialogBox{
+    min-width: 60%;
+    height: auto;
+    padding:30px 50px;
+   background-color: #fcfcfc;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editDialogBox h4{
+    font-weight: 500;
+}
+
+.editWrapper{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    margin: 15px 50px;
+}
+
+.editBox{
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.editProfile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.editProfile .editAvatar{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(160, 88, 160);
+    border-radius: 50%;
+    object-fit:cover;
+    font-size: 27px;
+}
+
+.editProfile label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 9px;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 0.1);
+}
+
+.editProfile .cameraAltIcon{
+    font-size: 22px;
+    color: #666;
+}
+
+.editProfile label:hover{
+    border: 1px solid purple;
+}
+
+.editBox form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;/* 
+    border: 1px solid blue; */
+}
+
+.editBox form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.editBox form input:focus{
+    outline: none;
+}
+
+.editBox form input[type=submit]{
+    border: none;
+    background-color:  rgb(160, 88, 160);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.editBbox form input[type=submit]:focus{
+    background-color: rgb(110, 17, 110);
+}
+

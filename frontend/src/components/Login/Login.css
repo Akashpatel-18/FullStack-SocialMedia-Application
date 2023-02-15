@@ -1,0 +1,119 @@
+.signInwrapper{
+    width: 100vw;
+    height: 100vh;
+   
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signIncard{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+/*     border: 1px solid red;
+ */}
+
+.signInleft{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+/*     border: 1px solid blue;
+ */}
+
+.signInlogo{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(160, 88, 160);
+    margin-bottom: 5px;
+    font-family: 'Amaranth', sans-serif;
+
+}
+
+.signIndesc{
+    font-size: 21px;
+}
+
+.signInright{
+    width:45%;
+/*    border: 1px solid orange;
+ */   display: flex;
+    flex-direction: column;
+}
+
+.signInbox{
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* gap:60px; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+.signInbox form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 40px/* ;
+    border: 1px solid blue; */
+}
+
+.signInbox form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.signInbox form input:focus{
+    outline: none;
+}
+
+.signInbox form input[type=submit]{
+    border: none;
+    background-color:  rgb(160, 88, 160);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signInbox form input[type=submit]:focus{
+    background-color: rgb(110, 17, 110);
+}
+
+.signInbox p{
+    text-align: right;
+    font-size: 14px;
+}
+
+.signInbox .signInforgotpassword{
+    text-align: right;
+    font-size: 14px;
+}
+
+.signInbox a{
+    text-decoration: none;
+    color: rgb(160, 88, 160);
+    cursor: pointer;
+}
+
+.signInbox a:hover{
+    text-decoration: underline;
+}
+
+.loginLoading {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    font-size: 15px;
+}

@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const getUser = createAsyncThunk('getuser', async () => {
     try {
-        const response = await axios.get('/posts/loginUser')
+        const response = await axios.get('https://websocialfun.vercel.app/posts/loginUser')
 
         return response.data
     } catch (error) {
@@ -13,7 +13,7 @@ export const getUser = createAsyncThunk('getuser', async () => {
 
 export const searchUser = createAsyncThunk('searchuser', async (person) => {
     try {
-        const response = await axios.get(`/users/search/${person}`)
+        const response = await axios.get(`https://websocialfun.vercel.app/users/search/${person}`)
    
         return response.data
     } catch (error) {
@@ -24,7 +24,7 @@ export const searchUser = createAsyncThunk('searchuser', async (person) => {
 
 export const editUser = createAsyncThunk('edituser', async (formValue) => {
     try {
-        const response = await axios.patch('/users/editProfile', formValue)
+        const response = await axios.patch('https://websocialfun.vercel.app/users/editProfile', formValue)
 
         return response.data
     } catch (error) {
@@ -34,7 +34,7 @@ export const editUser = createAsyncThunk('edituser', async (formValue) => {
 
 export const otherUser = createAsyncThunk('otherUser', async (id) => {
     try {
-        const response = await axios.get(`/posts/otherUser/${id}`)
+        const response = await axios.get(`https://websocialfun.vercel.app/posts/otherUser/${id}`)
       
         return response.data
     } catch (error) {
@@ -44,7 +44,7 @@ export const otherUser = createAsyncThunk('otherUser', async (id) => {
 
 export const getAllUser = createAsyncThunk('getAllUser', async () => {
     try {
-        const response = await axios.get('/users/all')
+        const response = await axios.get('https://websocialfun.vercel.app/users/all')
 
         return response.data
     } catch (error) {
@@ -54,7 +54,7 @@ export const getAllUser = createAsyncThunk('getAllUser', async () => {
 
 export const getPost = createAsyncThunk('getPosts', async () => {
     try {
-        const response = await axios.get('/posts/all')
+        const response = await axios.get('https://websocialfun.vercel.app/posts/all')
 
         return response.data
     } catch (error) {
@@ -64,7 +64,7 @@ export const getPost = createAsyncThunk('getPosts', async () => {
 
 export const getOtherUserPost = createAsyncThunk('getOtherUserPosts', async (id) => {
     try {
-        const response = await axios.get(`/posts/otherProfile/${id}`)
+        const response = await axios.get(`https://websocialfun.vercel.app/posts/otherProfile/${id}`)
 
         return response.data
     } catch (error) {
@@ -76,7 +76,7 @@ export const createPost = createAsyncThunk('createPost', async (postData) => {
 
     try {
         
-        const response = await axios.post('/posts/create', postData)
+        const response = await axios.post('https://websocialfun.vercel.app/posts/create', postData)
        
         return response.data
 
@@ -90,7 +90,7 @@ export const updatePost = createAsyncThunk('updatePost', async ({oldpostId, data
    const id = oldpostId
  
     try {
-        const response  = await axios.patch(`/posts/${id}`, data)
+        const response  = await axios.patch(`https://websocialfun.vercel.app/posts/${id}`, data)
       
         return response.data
 
@@ -104,7 +104,7 @@ export const likeAndUnlikePost = createAsyncThunk('likeAndUnlikePost', async (id
   
   
      try {
-         const response  = await axios.patch(`/posts/likeAndUnlike/${id}`)
+         const response  = await axios.patch(`https://websocialfun.vercel.app/posts/likeAndUnlike/${id}`)
        
          return response.data
  
@@ -119,7 +119,7 @@ export const deletePost = createAsyncThunk('deletePost', async (id) => {
 
     try {
         
-        await axios.delete(`/posts/${id}`)
+        await axios.delete(`https://websocialfun.vercel.app/posts/${id}`)
         return id
 
     } catch (error) {
@@ -131,7 +131,7 @@ export const deletePost = createAsyncThunk('deletePost', async (id) => {
 export const commentPost = createAsyncThunk('commentPost', async ({id,comment}) => {
     console.log(comment)
      try {
-         const response  = await axios.patch(`/posts/comment/${id}`, comment)
+         const response  = await axios.patch(`https://websocialfun.vercel.app/posts/comment/${id}`, comment)
         console.log(response.data)
          return response.data
  

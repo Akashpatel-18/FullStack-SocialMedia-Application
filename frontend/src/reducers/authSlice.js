@@ -1,7 +1,7 @@
 import {createSlice,createAsyncThunk} from '@reduxjs/toolkit'
 import axios from 'axios'
 
-export const register = createAsyncThunk('/register', async({formValue,navigate, toast}, {rejectWithValue}) => {
+export const register = createAsyncThunk('register', async({formValue,navigate, toast}, {rejectWithValue}) => {
     try {
         
         const response = await axios.post('/users/register', formValue)
@@ -14,7 +14,7 @@ export const register = createAsyncThunk('/register', async({formValue,navigate,
     }
 }) 
 
-export const login = createAsyncThunk('/login', async({formValue,navigate, toast}, {rejectWithValue}) => {
+export const login = createAsyncThunk('login', async({formValue,navigate, toast}, {rejectWithValue}) => {
     try {
         
         const response = await axios.post('/users/login', formValue)

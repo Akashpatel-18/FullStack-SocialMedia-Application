@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const app = express()
+const path = require('path')
 
 //config
 require('dotenv').config()
@@ -33,7 +34,17 @@ mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("DB Connected"))
 .catch((err) => console.log(err.message))
 
+//static files
+app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+app.get('*', (req,res) => {
+    res.sendFile(path.join(__dirname, '../frontend/build/index.html'))
+})
+
+//port
+const port = process.env.PORT || 8080;
+
 //listen to the server
 app.listen(process.env.PORT, () => {
-    console.log("server started on port 5000")
+    console.log(`server started on port ${process.env.PORT}`)
 })

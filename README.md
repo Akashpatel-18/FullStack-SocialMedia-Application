@@ -156,7 +156,7 @@ npm start
 
 ### Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file in server folder
+To run this project, you will need to add the following environment variables to your .env file in backend folder
 
 `MONGO_URI`
 

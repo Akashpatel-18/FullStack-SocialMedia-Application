@@ -94,13 +94,13 @@ This project was built using React, Redux, MUI, HTML, CSS, JavaScript, Node JS, 
 ### Setup
 
 
-The project repository can be found in [GitHub link](https://github.com/Akashpatel-18/full-stack-mern-app) or just clone the project using this command.
+The project repository can be found in [GitHub link](https://github.com/Akashpatel-18/FullStack-SocialMedia-Application) or just clone the project using this command.
 
 
 ```
 Using HTTPS
 
-# git clone https://github.com/Akashpatel-18/full-stack-mern-app.git
+# git clone https://github.com/Akashpatel-18/FullStack-SocialMedia-Application.git
 ```
 
 
